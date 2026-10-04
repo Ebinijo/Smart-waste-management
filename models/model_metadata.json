@@ -1,0 +1,98 @@
+{
+    "model_name": "LightGBM",
+    "hyperparameters": {
+        "learning_rate": 0.1,
+        "max_depth": 6,
+        "n_estimators": 150
+    },
+    "features": [
+        "FL_A",
+        "FL_B",
+        "FL_A_3",
+        "FL_B_3",
+        "FL_A_12",
+        "FL_B_12",
+        "VS",
+        "Recyclable Fraction",
+        "fill_diff_A_3",
+        "fill_diff_B_3",
+        "fill_diff_A_12",
+        "fill_diff_B_12",
+        "max_fill",
+        "min_fill",
+        "avg_fill",
+        "sensor_delta",
+        "acc_rate_3h",
+        "container_vol_weight",
+        "Container Type_Medium",
+        "Container Type_Large",
+        "Container Type_Industrial"
+    ],
+    "metrics": {
+        "test_accuracy": 0.986,
+        "test_precision": 0.9878,
+        "test_recall": 0.9857,
+        "test_f1": 0.9867,
+        "test_auc": 0.9995,
+        "confusion_matrix": [
+            [
+                431,
+                6
+            ],
+            [
+                7,
+                484
+            ]
+        ]
+    },
+    "comparison": [
+        {
+            "Model": "Logistic Regression",
+            "Accuracy": 0.9873,
+            "Precision": 0.9878,
+            "Recall": 0.9883,
+            "F1-Score": 0.988,
+            "ROC-AUC": 0.9994
+        },
+        {
+            "Model": "Decision Tree",
+            "Accuracy": 0.9733,
+            "Precision": 0.976,
+            "Recall": 0.9735,
+            "F1-Score": 0.9747,
+            "ROC-AUC": 0.9749
+        },
+        {
+            "Model": "Random Forest",
+            "Accuracy": 0.9806,
+            "Precision": 0.9802,
+            "Recall": 0.9832,
+            "F1-Score": 0.9816,
+            "ROC-AUC": 0.9984
+        },
+        {
+            "Model": "Gradient Boosting",
+            "Accuracy": 0.9833,
+            "Precision": 0.9862,
+            "Recall": 0.9822,
+            "F1-Score": 0.9841,
+            "ROC-AUC": 0.999
+        },
+        {
+            "Model": "XGBoost",
+            "Accuracy": 0.9873,
+            "Precision": 0.9888,
+            "Recall": 0.9873,
+            "F1-Score": 0.988,
+            "ROC-AUC": 0.9994
+        },
+        {
+            "Model": "LightGBM",
+            "Accuracy": 0.9876,
+            "Precision": 0.9883,
+            "Recall": 0.9883,
+            "F1-Score": 0.9883,
+            "ROC-AUC": 0.9993
+        }
+    ]
+}

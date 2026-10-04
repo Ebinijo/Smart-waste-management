@@ -1,0 +1,11 @@
+{
+  "name": "intelligent-waste-collection-system",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:frontend": "npm --prefix frontend install",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start:backend": "python backend/main.py"
+  }
+}
